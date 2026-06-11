@@ -1,0 +1,6 @@
+{
+  "name": "PowerSafe Electrical",
+  "description": "Complete multi-page electrician business website for a UK-based electrician in Birmingham, UK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
