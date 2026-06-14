@@ -40,7 +40,7 @@ export default function Navbar() {
     const isActive = location.pathname === path;
     const base = isMobile 
       ? 'block px-4 py-3 rounded-xl font-semibold transition text-base' 
-      : 'font-medium transition text-sm py-1.5 px-3 rounded-lg relative';
+      : 'font-medium transition text-sm py-1.5 px-4 rounded-lg relative';
     
     if (highlight) {
       return isActive 
@@ -86,7 +86,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav Links */}
-          <nav id="desktop-nav-menu" className="hidden lg:flex items-center space-x-1">
+          <nav id="desktop-nav-menu" className="hidden lg:flex items-center space-x-3">
             {navLinks.map((link) => (
               <Link 
                 id={`nav-link-desktop-${link.path.replace('/', '') || 'home'}`}

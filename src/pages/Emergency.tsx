@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import IconRenderer from '../components/IconRenderer';
+import PageSEO from '../components/PageSEO';
 
 export default function Emergency() {
   const emergencyThreats = [
@@ -32,14 +33,19 @@ export default function Emergency() {
 
   return (
     <div id="emergency-page-container" className="space-y-12 pb-16 text-left">
+      <PageSEO
+        title="24/7 Emergency Electrician Birmingham"
+        description="Emergency electrician available 24/7 in Birmingham. We arrive within 45 minutes for power cuts, sparking sockets, burning smells and fuse board failures. Call 07700 900077."
+        canonical="/emergency"
+      />
       
       {/* Immersive Danger Crimson Hero */}
       <section 
         id="emergency-hero-header" 
-        className="relative bg-gradient-to-br from-slate-900 via-slate-950 to-red-950 text-white pt-16 pb-20 rounded-b-3xl overflow-hidden"
+        className="relative bg-linear-to-br from-slate-900 via-slate-950 to-red-950 text-white pt-16 pb-20 rounded-b-3xl overflow-hidden"
       >
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-red-600/10 rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] opacity-20"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-87.5 h-87.5 bg-red-600/10 rounded-full blur-3xl"></div>
 
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6 relative z-10">
           <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider animate-pulse">

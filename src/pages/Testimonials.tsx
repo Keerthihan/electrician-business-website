@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import { TESTIMONIALS } from '../lib/data';
 import TestimonialCard from '../components/TestimonialCard';
 import IconRenderer from '../components/IconRenderer';
+import PageSEO from '../components/PageSEO';
 
 export default function Testimonials() {
   return (
     <div id="testimonials-page-container" className="space-y-12 pb-16 text-left">
+      <PageSEO
+        title="Customer Reviews"
+        description="Read verified 5-star reviews from PowerSafe Electrical customers across Birmingham, Sutton Coldfield, Solihull and West Midlands."
+        canonical="/testimonials"
+      />
       
       {/* Page Hero */}
       <section id="testimonials-hero-header" className="bg-slate-900 text-white py-12 px-4 rounded-b-3xl">

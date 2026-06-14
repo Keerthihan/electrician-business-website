@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SERVICES } from '../lib/data';
 import IconRenderer from '../components/IconRenderer';
+import PageSEO from '../components/PageSEO';
 
 export default function Services() {
   const [activeDetailId, setActiveDetailId] = useState<string | null>(null);
@@ -16,6 +17,11 @@ export default function Services() {
 
   return (
     <div id="services-page-container" className="space-y-12 pb-16">
+      <PageSEO
+        title="Electrical Services Birmingham"
+        description="Full range of electrical services in Birmingham: consumer unit upgrades, EV charger installation, rewires, fault finding, PAT testing & more. NICEIC certified."
+        canonical="/services"
+      />
       
       {/* Page Hero */}
       <section id="services-hero-header" className="bg-slate-900 text-white py-12 px-4 rounded-b-3xl">

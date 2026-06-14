@@ -6,6 +6,7 @@ import ServiceCard from '../components/ServiceCard';
 import TestimonialCard from '../components/TestimonialCard';
 import CTABanner from '../components/CTABanner';
 import IconRenderer from '../components/IconRenderer';
+import PageSEO from '../components/PageSEO';
 
 export default function Home() {
   // Show first 6 services as requested
@@ -34,14 +35,19 @@ export default function Home() {
 
   return (
     <div id="home-page-container" className="space-y-16 pb-12">
+      <PageSEO
+        title="NICEIC Approved Electrician Birmingham"
+        description="NICEIC approved electrician serving Birmingham & West Midlands. Consumer unit upgrades, EV chargers, rewires, and 24/7 emergency call-outs within 45 minutes. Free quotes."
+        canonical="/"
+      />
       
       {/* 1. Hero Section */}
       <section 
         id="home-hero-section" 
-        className="relative bg-slate-900 text-white pt-16 pb-20 md:py-28 overflow-hidden rounded-b-[2rem]"
+        className="relative bg-slate-900 text-white pt-16 pb-20 md:py-28 overflow-hidden rounded-b-4xl"
       >
         {/* Abstract Architectural Grid Overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_100%,transparent_100%)] opacity-35"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_100%,transparent_100%)] opacity-35"></div>
         {/* Glow Spheres */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-red-600/5 rounded-full blur-3xl"></div>
@@ -120,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* 4. Why Choose Us Section */}
-      <section id="why-choose-us-section" className="bg-slate-100/50 py-16 rounded-[2rem]">
+      <section id="why-choose-us-section" className="bg-slate-100/50 py-16 rounded-4xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           <div className="text-center max-w-2xl mx-auto space-y-3">

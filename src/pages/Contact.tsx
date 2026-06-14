@@ -2,6 +2,7 @@ import React from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import QuoteForm from '../components/QuoteForm';
 import IconRenderer from '../components/IconRenderer';
+import PageSEO from '../components/PageSEO';
 
 export default function Contact() {
   const [searchParams] = useSearchParams();
@@ -33,6 +34,11 @@ export default function Contact() {
 
   return (
     <div id="contact-page-container" className="space-y-12 pb-16 text-left">
+      <PageSEO
+        title="Contact Us & Free Quote"
+        description="Get a free quote from PowerSafe Electrical. Call 07700 900077 or use our online form. Serving Birmingham and West Midlands 7 days a week."
+        canonical="/contact"
+      />
       
       {/* Page Hero */}
       <section id="contact-hero-header" className="bg-slate-900 text-white py-12 px-4 rounded-b-3xl">
@@ -124,7 +130,7 @@ export default function Contact() {
             </div>
 
             {/* Quick Map embed */}
-            <div id="contact-micro-map" className="relative h-[220px] rounded-2xl overflow-hidden border border-slate-200">
+            <div id="contact-micro-map" className="relative h-55 rounded-2xl overflow-hidden border border-slate-200">
               <iframe 
                 title="Micro Birmingham Hub Map" 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155424.32986420557!2d-1.9961014389146522!3d52.477461821033285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ba22efbc35f3%3A0xd99ca1b7ba69c3a3!2sBirmingham%2C%20UK!5e0!3m2!1sen!2suae!4v1717800000000!5m2!1sen!2suae" 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GALLERY_ITEMS } from '../lib/data';
 import IconRenderer from '../components/IconRenderer';
+import PageSEO from '../components/PageSEO';
 
 type FilterType = 'all' | 'consumer-units' | 'rewires' | 'ev-chargers' | 'lighting';
 
@@ -41,6 +42,11 @@ export default function Gallery() {
 
   return (
     <div id="gallery-page-container" className="space-y-12 pb-16 text-left relative">
+      <PageSEO
+        title="Work Gallery"
+        description="Browse our portfolio of completed electrical installations in Birmingham: consumer unit upgrades, EV charger installs, rewires, and LED lighting projects."
+        canonical="/gallery"
+      />
       
       {/* Page Hero */}
       <section id="gallery-hero-header" className="bg-slate-900 text-white py-12 px-4 rounded-b-3xl">

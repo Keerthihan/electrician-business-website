@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import IconRenderer from '../components/IconRenderer';
+import PageSEO from '../components/PageSEO';
 
 export default function About() {
   const stats = [
@@ -31,6 +32,11 @@ export default function About() {
 
   return (
     <div id="about-page-container" className="space-y-16 pb-16 text-left">
+      <PageSEO
+        title="About Us"
+        description="Meet David Jenkins and the PowerSafe Electrical team. NICEIC approved, City & Guilds qualified electricians with 10+ years serving Birmingham and West Midlands."
+        canonical="/about"
+      />
       
       {/* Page Hero */}
       <section id="about-hero-header" className="bg-slate-900 text-white py-12 px-4 rounded-b-3xl">
@@ -77,12 +83,12 @@ export default function About() {
 
           {/* Right Image Placeholder via high-quality Unsplash image */}
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-amber-600 rounded-3xl rotate-2 opacity-5 scale-102 group-hover:rotate-1 group-hover:scale-100 transition-all duration-300"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-amber-500 to-amber-600 rounded-3xl rotate-2 opacity-5 scale-102 group-hover:rotate-1 group-hover:scale-100 transition-all duration-300"></div>
             <img 
               id="about-engineer-photo"
               src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?q=80&w=800&auto=format&fit=crop" 
               alt="David Jenkins - Lead Electrical Engineer at PowerSafe Electrical" 
-              className="rounded-3xl shadow-lg border-4 border-white transition-transform duration-300 relative z-10 w-full object-cover h-[350px] sm:h-[450px]"
+              className="rounded-3xl shadow-lg border-4 border-white transition-transform duration-300 relative z-10 w-full object-cover h-87.5 sm:h-112.5"
             />
           </div>
 
@@ -90,7 +96,7 @@ export default function About() {
       </section>
 
       {/* Stats row section */}
-      <section id="about-stats-section" className="bg-slate-900 text-white py-12 rounded-[2rem] max-w-7xl mx-auto">
+      <section id="about-stats-section" className="bg-slate-900 text-white py-12 rounded-4xl max-w-7xl mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 px-8">
           {stats.map((stat, idx) => (
             <div id={`stat-node-${idx}`} key={idx} className="text-center space-y-1">

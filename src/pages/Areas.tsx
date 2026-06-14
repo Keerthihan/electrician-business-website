@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AREAS } from '../lib/data';
 import IconRenderer from '../components/IconRenderer';
+import PageSEO from '../components/PageSEO';
 
 export default function Areas() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -17,6 +18,11 @@ export default function Areas() {
 
   return (
     <div id="areas-page-container" className="space-y-12 pb-16 text-left">
+      <PageSEO
+        title="Areas We Cover in Birmingham & West Midlands"
+        description="PowerSafe Electrical covers Birmingham City Centre, Sutton Coldfield, Solihull, Edgbaston, Harborne, and 15+ more areas across the West Midlands. Fast 45-minute response."
+        canonical="/areas"
+      />
       
       {/* Page Hero */}
       <section id="areas-hero-header" className="bg-slate-900 text-white py-12 px-4 rounded-b-3xl">
@@ -121,7 +127,7 @@ export default function Areas() {
             allowFullScreen={false} 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-[350px] md:h-[450px]"
+            className="w-full h-87.5 md:h-112.5"
           ></iframe>
           <div className="absolute bottom-4 left-4 right-4 bg-slate-950/90 text-slate-300 p-4 rounded-xl text-xs backdrop-blur-sm border border-slate-800 flex flex-col md:flex-row gap-3 items-start md:items-center justify-between">
             <div>

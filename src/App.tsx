@@ -53,7 +53,7 @@ export default function App() {
         <Navbar />
 
         {/* Global Route Outlets content area */}
-        <main className="flex-grow">
+        <main className="grow">
           <Routes>
             <Route 
               path="/" 
