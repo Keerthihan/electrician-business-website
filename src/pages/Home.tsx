@@ -46,11 +46,10 @@ export default function Home() {
         id="home-hero-section" 
         className="relative bg-slate-900 text-white pt-16 pb-20 md:py-28 overflow-hidden rounded-b-4xl"
       >
-        {/* Abstract Architectural Grid Overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_100%,transparent_100%)] opacity-35"></div>
-        {/* Glow Spheres */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-red-600/5 rounded-full blur-3xl"></div>
+        {/* Grid overlay — CSS background only, no filter */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] opacity-30"></div>
+        {/* Radial colour accents — CSS gradient, no expensive filter:blur */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(245,158,11,0.12)_0%,transparent_55%)]"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl text-center mx-auto space-y-6">

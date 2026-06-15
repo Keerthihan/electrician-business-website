@@ -129,7 +129,7 @@ export default function Areas() {
             referrerPolicy="no-referrer-when-downgrade"
             className="w-full h-87.5 md:h-112.5"
           ></iframe>
-          <div className="absolute bottom-4 left-4 right-4 bg-slate-950/90 text-slate-300 p-4 rounded-xl text-xs backdrop-blur-sm border border-slate-800 flex flex-col md:flex-row gap-3 items-start md:items-center justify-between">
+          <div className="absolute bottom-4 left-4 right-4 bg-slate-950 text-slate-300 p-4 rounded-xl text-xs border border-slate-800 flex flex-col md:flex-row gap-3 items-start md:items-center justify-between">
             <div>
               <p className="font-bold text-white">Representative Birmingham Coverage Center</p>
               <p className="text-[11px] text-slate-400 mt-0.5">Note: This is an embedded reference. To configure standard custom locations, update the iframe src inside our main source files.</p>

@@ -104,10 +104,12 @@ export default function Gallery() {
                   src={item.imageUrl}
                   alt={item.title}
                   loading="lazy"
+                  width="600"
+                  height="400"
                   className="w-full object-cover group-hover:scale-102 transition-transform duration-500 h-auto"
                 />
                 <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="bg-white/90 backdrop-blur-sm text-slate-900 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 shadow">
+                  <span className="bg-white text-slate-900 font-bold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 shadow">
                     <IconRenderer name="Search" className="h-3.5 w-3.5" />
                     Expand Project
                   </span>
@@ -130,7 +132,7 @@ export default function Gallery() {
         <div
           id="lightbox-backdrop"
           onClick={() => setLightboxIndex(null)}
-          className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in"
+          className="fixed inset-0 z-50 bg-slate-950 flex items-center justify-center p-4 animate-fade-in"
         >
           {/* Close Trigger */}
           <button

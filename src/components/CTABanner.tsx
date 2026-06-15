@@ -17,9 +17,6 @@ export default function CTABanner({
       id="cta-emergency-banner" 
       className="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden"
     >
-      {/* Decorative Glow Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_100%,transparent_100%)] opacity-35"></div>
-      
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
         <div className="max-w-2xl text-center lg:text-left">
           {showEmergencyDetails && (

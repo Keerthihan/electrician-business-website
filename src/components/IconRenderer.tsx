@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  ShieldAlert, 
-  Zap, 
-  BatteryCharging, 
-  Wrench, 
-  Lightbulb, 
-  CheckSquare, 
-  Eye, 
+import {
+  ShieldAlert,
+  Zap,
+  BatteryCharging,
+  Wrench,
+  Lightbulb,
+  CheckSquare,
+  Eye,
   Briefcase,
   ShieldCheck,
   Award,
@@ -21,6 +21,8 @@ import {
   Search,
   ChevronRight,
   ArrowRight,
+  Menu,
+  X,
   HelpCircle
 } from 'lucide-react';
 
@@ -77,6 +79,10 @@ export default function IconRenderer({ name, className = '', size }: IconRendere
       return <ChevronRight {...iconProps} />;
     case 'ArrowRight':
       return <ArrowRight {...iconProps} />;
+    case 'Menu':
+      return <Menu {...iconProps} />;
+    case 'X':
+      return <X {...iconProps} />;
     default:
       return <HelpCircle {...iconProps} />;
   }

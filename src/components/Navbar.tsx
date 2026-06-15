@@ -16,7 +16,7 @@ export default function Navbar() {
         setIsScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -64,8 +64,8 @@ export default function Navbar() {
       id="main-navigation-header"
       className={`sticky top-0 z-50 transition-all duration-300 w-full ${
         isScrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 py-3' 
-          : 'bg-white/95 md:bg-white/50 md:backdrop-blur-none py-5'
+          ? 'bg-white shadow-sm border-b border-slate-100 py-3'
+          : 'bg-white py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,7 +117,7 @@ export default function Navbar() {
               className="inline-flex lg:hidden items-center justify-center p-2.5 rounded-xl text-slate-700 hover:text-amber-500 hover:bg-slate-50 transition border border-slate-100 focus:outline-none"
               aria-label="Toggle navigation menu"
             >
-              <IconRenderer name={isOpen ? 'X' : 'Bar'} className="h-6 w-6" />
+              <IconRenderer name={isOpen ? 'X' : 'Menu'} className="h-6 w-6" />
             </button>
           </div>
 
