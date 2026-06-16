@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import IconRenderer from '../components/IconRenderer';
 import PageSEO from '../components/PageSEO';
+import electricalWorkImage from '../lib/images/ele.jpg';
 
 export default function About() {
   const stats = [
@@ -81,13 +82,15 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right Image Placeholder via high-quality Unsplash image */}
+          {/* Right Image */}
           <div className="relative group">
             <div className="absolute inset-0 bg-linear-to-r from-amber-500 to-amber-600 rounded-3xl rotate-2 opacity-5 scale-102 group-hover:rotate-1 group-hover:scale-100 transition-all duration-300"></div>
             <img 
               id="about-engineer-photo"
-              src="https://images.unsplash.com/photo-1621905252507-b354bc25edac?q=80&w=800&auto=format&fit=crop" 
+              src={electricalWorkImage} 
               alt="David Jenkins - Lead Electrical Engineer at PowerSafe Electrical" 
+              loading="lazy"
+              decoding="async"
               className="rounded-3xl shadow-lg border-4 border-white transition-transform duration-300 relative z-10 w-full object-cover h-87.5 sm:h-112.5"
             />
           </div>

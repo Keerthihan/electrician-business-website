@@ -1,4 +1,11 @@
 import { ServiceItem, TestimonialItem, AreaItem, GalleryItem } from '../types';
+import ambientOutdoorGardenLuminaire from './images/Ambient Outdoor Garden Luminaire .jpg';
+import electricalWork from './images/ele.jpg';
+import kitchenExtensionLedDownlighting from './images/Kitchen extension LED downlighting.jpg';
+import metalConsumerUnitWithSpd from './images/Metal Consumer Unit with SPD.jpg';
+import premiumBrushedChromeSockets from './images/Premium Brushed Chrome Sockets.jpg';
+import wallboxPulsarPlusInstall from './images/Wallbox Pulsar Plus Install.jpg';
+import zappiSmartEvChargerInstallation from './images/Zappi Smart EV Charger Installation.jpg';
 
 export const SERVICES: ServiceItem[] = [
   {
@@ -162,63 +169,63 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g1',
     title: 'Modern RCD Fuse Board Upgrade',
     category: 'consumer-units',
-    imageUrl: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop',
+    imageUrl: metalConsumerUnitWithSpd,
     description: 'Replaced a dangerous 1980s plastic rewirable fuseboard with a fully fire-retardant metal consumer unit containing global SPDs and dual safety RCDs.',
   },
   {
     id: 'g2',
     title: 'Zappi Smart EV Charger Installation',
     category: 'ev-chargers',
-    imageUrl: 'https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=600&auto=format&fit=crop',
+    imageUrl: zappiSmartEvChargerInstallation,
     description: 'Neat driveway installation of a 7.2 kW Zappi Eco-Smart Charger, linked to the client\'s solar panels to execute charging using surplus solar power.',
   },
   {
     id: 'g3',
     title: 'Kitchen extension LED downlighting',
     category: 'lighting',
-    imageUrl: 'https://images.unsplash.com/photo-1565814636199-ae8133055c1c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: kitchenExtensionLedDownlighting,
     description: 'A grid of 12 fire-rated dimmable LED spotlight modules providing bright, uniform illumination for meal preparations and soft, warm ambient loops.',
   },
   {
     id: 'g4',
     title: 'High-Level Conduit Industrial Wiring',
     category: 'rewires',
-    imageUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop',
+    imageUrl: electricalWork,
     description: 'Galvanised steel conduits configured perfectly for absolute durability in a newly built mechanical workshop near Castle Bromwich.',
   },
   {
     id: 'g5',
     title: 'Premium Brushed Chrome Sockets',
     category: 'lighting',
-    imageUrl: 'https://images.unsplash.com/photo-1621905252507-b354bc25edac?q=80&w=600&auto=format&fit=crop',
+    imageUrl: premiumBrushedChromeSockets,
     description: 'Swapped all generic white sockets in a living area for premium brushed steel plates with integrated fast-charge Type-C and Type-A USB docks.',
   },
   {
     id: 'g6',
     title: 'Wallbox Pulsar Plus Install',
     category: 'ev-chargers',
-    imageUrl: 'https://images.unsplash.com/photo-1558224494-b77d8123d2f8?q=80&w=600&auto=format&fit=crop',
+    imageUrl: wallboxPulsarPlusInstall,
     description: 'Sleek, compact EV charger installation with subtle, discrete armored cable routing passing under block paving paths.',
   },
   {
     id: 'g7',
     title: 'Full Victorian Home Rewire',
     category: 'rewires',
-    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop',
+    imageUrl: electricalWork,
     description: 'Complete top-to-bottom rewrite of a three-story Victorian terraced home, including chasing plaster, run testing, and fitting 48 terminal sockets.',
   },
   {
     id: 'g8',
     title: 'Metal Consumer Unit with SPD',
     category: 'consumer-units',
-    imageUrl: 'https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=600&auto=format&fit=crop',
+    imageUrl: metalConsumerUnitWithSpd,
     description: 'NICEIC-approved dual RCD protective split consumer unit fitted for a local commercial retail outlet.',
   },
   {
     id: 'g9',
     title: 'Ambient Outdoor Garden Luminaire',
     category: 'lighting',
-    imageUrl: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: ambientOutdoorGardenLuminaire,
     description: 'Low-voltage garden landscape lighting setup highlighting mature trees and patio slabs, controlled via a mobile client application.',
   }
 ];

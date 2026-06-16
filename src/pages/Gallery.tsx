@@ -103,7 +103,9 @@ export default function Gallery() {
                 <img
                   src={item.imageUrl}
                   alt={item.title}
-                  loading="lazy"
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                  decoding="async"
+                  fetchPriority={index === 0 ? 'high' : 'auto'}
                   width="600"
                   height="400"
                   className="w-full object-cover group-hover:scale-102 transition-transform duration-500 h-auto"
@@ -163,6 +165,8 @@ export default function Gallery() {
             <img
               src={filteredItems[lightboxIndex].imageUrl}
               alt={filteredItems[lightboxIndex].title}
+              loading="eager"
+              decoding="async"
               className="max-h-[60vh] object-contain w-full bg-slate-950"
             />
             {/* Metadata overlay */}

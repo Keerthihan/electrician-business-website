@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
+    "dev:https": "HTTPS=true vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "serve": "node preview-server.mjs",
+    "serve:https": "HTTPS=true PORT=3080 HTTPS_PORT=3443 node preview-server.mjs",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"
@@ -33,7 +35,9 @@
     "@types/react-dom": "^19.0.4",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.0",
+    "rollup-plugin-visualizer": "^7.0.1",
     "tailwindcss": "^4.1.14",
+    "terser": "^5.48.0",
     "tsx": "^4.21.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.3"
